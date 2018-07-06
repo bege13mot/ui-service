@@ -14,7 +14,7 @@ class CreateConsignment extends React.Component {
 
   componentWillMount() {
     let token = localStorage.getItem('token');
-    fetch(`http://10.0.0.65:8082/Consignment/GetConsignments`, {
+    fetch(`http://test.test/Consignment/GetConsignments`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ class CreateConsignment extends React.Component {
   create = () => {
     let consignment = this.state;
     let token = localStorage.getItem('token');
-    fetch(`http://10.0.0.65:8082/Consignment/CreateConsignment`, {
+    fetch(`http://test.test/Consignment/CreateConsignment`, {
       method: 'POST',
       headers: {
         'Authorization': `${token}`,

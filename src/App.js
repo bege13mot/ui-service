@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   login = () => {
-    fetch(`http://10.0.0.65:8081/Auth/Auth`, {
+    fetch(`http://test.test/Auth/Auth`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ class App extends Component {
   }
 
   signup = () => {
-    fetch(`http://localhost:8081/Auth/Create`, {
+    fetch(`http://test.test/Auth/Create`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
